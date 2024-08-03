@@ -1,0 +1,152 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Custom commands
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\item\small{#1 \vspace{-2pt}}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Set link color
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Muturi David} \\ \vspace{1pt} 
+    \href{mailto:muturidavid854@gmail.com}
+    {\underline{muturidavid854@gmail.com}} $|$
+    \href{https://linkedin.com/in/tushdev}{\underline{linkedin.com/in/tushdev}} $|$
+    \href{https://github.com/tushcmd}{\underline{github.com/tushcmd}} $|$
+    \href{https://tushdev.co/}{\underline{tushdev.co}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kenyatta University}{Nairobi, Kenya}
+      {Bachelor of Science, Nursing}{Aug. 2021 -- Dec. 2023}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {SWE Fellow}{Jul. 2024 -- Present}
+      {SWE Fellowship}{Track C (Virtual)}
+      \resumeItemListStart
+        \resumeSubItem{Developed and deployed multiple solo and team projects, including a personal website, pantry tracker, AI customer support system, and AI-powered flashcards and Stripe integration.}
+        \resumeSubItem{Worked with technologies including HTML, CSS, ReactJS, NextJS, Firebase, OpenAI API, and AWS.}
+        \resumeSubItem{Collaborated in teams to build scalable and efficient web applications, culminating in a final project and presentation.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Full Stack Developer}{Jan. 2024 -- Jun. 2024}
+      {Freelance}{Remote}
+      \resumeItemListStart
+        \resumeSubItem{Designed and implemented dynamic websites and web applications using React, Next.js, Node.js, and MongoDB.}
+        \resumeSubItem{Built RESTful APIs and integrated with third-party services to enhance functionality.}
+        \resumeSubItem{Collaborated with clients to deliver custom solutions tailored to their business needs.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+          {Next Dev Starter}{Jun. 2024}{\emph{Next.js, Shadcn, TypeScript, Zod}}{}
+          \resumeItemListStart
+            \resumeSubItem{Developed a complete starter template for Next.js developers, featuring components with shadcn forms and themes.}
+          \resumeItemListEnd
+      \resumeSubheading
+          {Portfolio Website}{Apr. 2024}{\emph{HTML, CSS, JavaScript, React.js, TailwindCSS}}{}
+          \resumeItemListStart
+            \resumeSubItem{Built a personal portfolio website showcasing projects and skills, with a modern and responsive design.}
+          \resumeItemListEnd
+      \resumeSubheading
+          {Puns AI}{Jul. 2024}{\emph{Next.js, OpenAI API, Vercel}}{}
+          \resumeItemListStart
+            \resumeSubItem{Created an application that generates puns based on user input using OpenAI's API.}
+          \resumeItemListEnd
+      \resumeSubheading
+          {Gitlytics}{Jun. 2023 -- Present}{\emph{Python, Flask, React, PostgreSQL, Docker}}{}
+          \resumeItemListStart
+            \resumeSubItem{Developed a full-stack web application with Flask serving a REST API and React as the frontend.}
+            \resumeSubItem{Implemented GitHub OAuth to fetch data from user repositories and visualize GitHub collaboration data.}
+            \resumeSubItem{Utilized Celery and Redis for asynchronous task management.}
+          \resumeItemListEnd
+      \resumeSubheading
+          {Simple Paintball}{May 2022 -- May 2024}{\emph{Spigot API, Java, Maven, TravisCI, Git}}{}
+          \resumeItemListStart
+            \resumeSubItem{Developed a Minecraft server plugin for entertainment, achieving 2K+ downloads and an average 4.5/5-star review.}
+            \resumeSubItem{Implemented continuous delivery using TravisCI to build the plugin upon new releases.}
+            \resumeSubItem{Collaborated with Minecraft server administrators to gather feedback and suggest new features.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, HTML, CSS, Python, SQL} \\
+     \textbf{Frameworks}{: React.js, Next.js, Node.js, Express.js, TailwindCSS, Docker} \\
+     \textbf{Tools}{: Git, GitHub, Figma, Vercel, AWS, Firebase} \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
