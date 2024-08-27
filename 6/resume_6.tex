@@ -1,0 +1,145 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Custom commands
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\item\small{#1 \vspace{-2pt}}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Muturi David} \\ \vspace{1pt} 
+    \textbf{ Software Engineer } \\ \vspace{1pt}
+    \href{mailto:muturidavid854@gmail.com}{\textcolor{blue}{muturidavid854@gmail.com}} $|$
+    \href{https://linkedin.com/in/tushdev}{\textcolor{blue}{linkedin.com/in/tushdev}} $|$
+    \href{https://github.com/tushcmd}{\textcolor{blue}{github.com/tushcmd}} $|$
+    \href{https://tushdev.co/}{\textcolor{blue}{tushdev.co}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kenyatta University}{Nairobi, Kenya}
+      {B Sc}{}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineering Fellow}{}
+      {\textcolor{blue}{\href{https://headstarter.co/}{Headstarter AI}}}{Track C (Virtual)}
+      \resumeItemListStart
+        \resumeSubItem{Developed and deployed multiple solo and team projects, including a personal website, pantry tracker, AI customer support system, and AI-powered flashcards and Stripe integration.}
+        \resumeSubItem{Worked with technologies including HTML, CSS, ReactJS, NextJS, Firebase, OpenAI API, and AWS.}
+        \resumeSubItem{Collaborated in teams to build scalable and efficient web applications, following agile methodologies with daily sprints and incorporated CI/CD practices for iterative deployment.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+          {\textcolor{blue}{\href{https://flash-cards-five-xi.vercel.app/}{AI Flashcards SaaS}}}{}{\emph{Next.js, Clerk, Firebase, OpenAI, Stripe}}{}
+          \resumeItemListStart
+            \resumeSubItem{Built a flashcard SaaS application with authentication, payment integration, and OpenAI-powered flashcard generation.}
+            \resumeSubItem{Implemented CRUD features with Firebase Firestore and handled subscriptions using Stripe.}
+          \resumeItemListEnd
+          
+      \resumeSubheading
+          {\textcolor{blue}{\href{https://ai-customer-support-rho.vercel.app/}{AI Customer Chat Bot}}}{}{\emph{Next.js, Shadcn UI, Next-auth, Prisma, PostgreSQL, Neon, OpenAI, TailwindCSS}}{}
+          \resumeItemListStart
+            \resumeSubItem{Developed an AI-powered customer support chatbot with a responsive interface, authentication, and feedback features using Next.js and the OpenAI API.}
+            \resumeSubItem{Implemented a PostgreSQL database with Prisma and deployed using Neon for scalable data storage and retrieval.}
+          \resumeItemListEnd
+          
+      \resumeSubheading
+          {\textcolor{blue}{\href{https://ram-rag.vercel.app/}{Rate a Mechanic RAG App}}}{}{\emph{Next.js, Shadcn UI, OpenAI, Pinecone, TailwindCSS}}{}
+          \resumeItemListStart
+            \resumeSubItem{Built a RAG AI assistant for rating mechanics using Next.js, with vector search capabilities provided by Pinecone and intelligent responses using OpenAI.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------HACKATHONS-----------
+\section{Hackathons}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+          {\textcolor{blue}{\href{https://github.com/tushcmd/olo-scraper}{OloScraper}}}{}{\emph{React, Node.js, Express.js, MongoDB, Puppeteer, TailwindCSS}}{}
+          \resumeItemListStart
+            \resumeSubItem{Developed a full-stack web scraping application that simulates browser-like interactions using a headless browser. Users can input a URL, and the application scrapes data and performs specified actions.}
+          \resumeItemListEnd
+          
+      \resumeSubheading
+          {Rilla Voice}{}{\emph{React, TypeScript, Node.js, AWS Lambda, DynamoDB, S3}}{}
+          \resumeItemListStart
+            \resumeSubItem{Finalist in a hackathon with a team of 5. Developed a frontend using React with TypeScript for viewing transcripts, managing comments, and displaying summaries. Implemented a backend with Node.js and AWS Lambda for handling CRUD operations and integrating with an LLM to generate summaries.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, HTML, CSS, Python, SQL} \\
+     \textbf{Frontend}{: React.js, Next.js, TailwindCSS, Material UI } \\
+     \textbf{Backend}{: Node.js, Express.js, MongoDB, PostgreSQL, Firebase} \\
+     \textbf{Version Control}{: Git, GitHub} \\
+     \textbf{Tools}{: Figma, Docker} \\
+     \textbf{Concepts}{: Object Oriented Programming, UI/UX Design Principles } \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
